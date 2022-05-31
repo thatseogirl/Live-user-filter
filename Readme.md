@@ -12,4 +12,4 @@
 It allows user to filter by firstName, lastName and location.
 
 
-Live demo 
+Live demo https://thatseogirl.github.io/Live-user-filter/

@@ -2,7 +2,6 @@ const displayedResult = document.getElementById("result");
 const filter = document.getElementById("filter");
 const listItems = [];
 
-//fetch data with asyc await(asynchronous).
 getUserData();
 
 filter.addEventListener("input", (e) => filteredData(e.target.value));
@@ -11,7 +10,6 @@ async function getUserData() {
   const respond = await fetch("https://randomuser.me/api?results=50");
   const data = await respond.json();
 
-  // clear result
   displayedResult.innerHTML = "";
 
   const userData = data.results;
@@ -40,9 +38,4 @@ function filteredData(searchTerms){
         }
     })
 }
-//synchronous way of fecthing data
-// function getUserData(){
-//    const respond =  fetch('https://randomuser.me/api?results=50')
-//   .then(response => response.json())
-//   .then(data => console.log(data));
-// }
+
